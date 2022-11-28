@@ -8,6 +8,7 @@ Workbook1 =r'N:\Product Development\Lexagene Engineering\elana\Biorad\Premix exp
 df_1 = pd.read_excel(Workbook1)
 print(df_1)
 
+#Filters out Tube colum
 df_1 = df_1[(df_1.Tube != 'Empty')]
 df_1 = df_1[(df_1.Tube != '#N/A')]
 df_1 = df_1[(df_1.Tube != 'N/A')]
